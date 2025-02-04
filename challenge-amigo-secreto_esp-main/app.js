@@ -12,16 +12,20 @@ let numberRandom = Math.floor(Math.random()*arrayAmigos);
 
 
 const agregarAmigo = () =>{
-    if()
-    console.log(inputAmigos.value);
-    arrayAmigos.push(inputAmigos.value);
-    console.log(arrayAmigos);
-    inputAmigos.value = ``;
-    const mostrarAmigos = () =>{
-        listaAmigos.innerHTML = ``;
-        listaAmigos.innerHTML = arrayAmigos;
+    if(inputAmigos.value == ``){
+        alert (`Por favor, inserte un nombre`)
+    }else{
+        console.log(inputAmigos.value);
+        arrayAmigos.push(inputAmigos.value);
+        console.log(arrayAmigos);
+        inputAmigos.value = ``;
+        const mostrarAmigos = () =>{
+            listaAmigos.innerHTML = ``;
+            listaAmigos.innerHTML = arrayAmigos;
+        }
+        mostrarAmigos();
     }
-    mostrarAmigos();
+
 }
 
 
